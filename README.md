@@ -12,7 +12,7 @@ A simple API geatway server that provides country name associated with an IP add
 - Tests included
 
 
-## Usage/Examples
+## Setup
 1. Rename .env.example to .env and put there your API key for Ipstack
 2. Install dependencies by running:
 ```
@@ -27,6 +27,17 @@ yarn start
 And this is how you run tests:
 ```
 yarn test
+```
+
+## Usage
+Open in browser:
+```
+http://localhost:3000/api/getCountry/TARGET_IP // where TARGET_IP is the address you want to check
+```
+
+For example:
+```
+http://localhost:3000/api/getCountry/31.221.178.22 // should return 'Spain'
 ```
 
 
