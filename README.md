@@ -36,11 +36,11 @@ You can add a new vendor by editing src/vendors.js.
 Add new object to vendors array with following structure:
 ```javascript
 {
-    "name": "vendor-name",
-    "url": `http://api.ipstack.com/<TARGET_IP>?access_key=${process.env.VENDOR_NAME}&fields=country_name`,
+    "name": "vendor-name", // your vendor name
+    "url": `http://yourvendorwebsite.com/<TARGET_IP>?api_key=${process.env.VENDOR_NAME}`, // vendor's url for api call
     "expectedField": "country_name", // may be different, you should check the vendor API docs
     "timeWindow": 3600000, // 1 hour
-    "maxRequests": 1
+    "maxRequests": 1 // maxumum requests per time window
   },
 ```
 
